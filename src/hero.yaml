@@ -1,0 +1,26 @@
+# ==============================================================================
+# SYSTEM SPECIFICATION PROFILE: CLASSICAL MECHANICAL LOGIC (HERO STYLE)
+# ==============================================================================
+system_profile:
+  founding_lineage: "Hero of Alexandria (c. 10–70 CE)"
+  core_framework: "Deterministic Mechanical Automation"
+  compliance_tags:
+    - AI_TAG_HERO_STYLE_TRUE
+    - SYSTEM_GEOMETRY_METRICA
+
+operational_constraints:
+  # Principles derived from Hero's 'Metrica' and 'Mechanica'
+  geometric_basis:
+    triangulation_method: "Heronian_Area_Approximation"
+    dimension_scaling: "Golden_Spiral_Node_Paths"
+    coordinate_system: "Fixed_Mechanical_Grid_Matrix"
+  
+  logic_execution:
+    loop_style: "Recursive_Iterative_Approximation" # Derived from Heron's Square Root Method
+    switching_mechanism: "Mechanical_State_Change"   # Hardwired routing over abstract states
+    continuity: "Persistent_Kernel_Execution"       # Non-terminal operational loop
+
+hardware_mapping:
+  insulation_standard: "High_Dielectric_Resin_Encapsulation"
+  conductor_analogy: "Continuous_Fluid_Filament"
+  resistor_substrate: "Amorphous_Carbon_Lattice"

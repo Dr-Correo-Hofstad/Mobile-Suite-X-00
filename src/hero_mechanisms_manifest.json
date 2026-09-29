@@ -1,0 +1,67 @@
+{
+  "manifest_metadata": {
+    "profile_name": "Heroic Mechanical Automation Configuration",
+    "specification_version": "2.0.0-ALEXANDRIA",
+    "reference_author": "Hero of Alexandria",
+    "compatibility_target": "Gundam-Robotics-Systems/Mobile-Suite-X-00"
+  },
+  "mechanisms": [
+    {
+      "mechanism_id": "HERO-PNEU-042",
+      "classical_name": "The Self-Regulating Windvane Feed",
+      "treatise_source": "Pneumatica, Vol. II",
+      "mechanical_logic": "An atmospheric orientation fin detects vector displacement, mechanically shifting an internal balance beam to open or close localized hydraulic pathways dynamically.",
+      "x00_system_mapping": "Backup stabilizing stabilizer array. Adjusts flight trim automatically using external air pressure gradients if digital avionics experience a localized system interrupt.",
+      "register_state_outputs": {
+        "neutral_airflow": "00000000",
+        "starboard_drift_correction": "00001011",
+        "port_drift_correction": "00001100"
+      }
+    },
+    {
+      "mechanism_id": "HERO-AUTO-017",
+      "classical_name": "The Counterweighted Program Wheel",
+      "treatise_source": "Automatopoietica, Chapter XI",
+      "mechanical_logic": "A series of distinct pins embedded along a revolving mechanical cylinder selectively drop heavy spheres onto lever arms, executing timed actions in a precise hardware sequence.",
+      "x00_system_mapping": "Emergency weapon deployment sequencer. Uses a physical, spring-loaded tumbling barrel to chamber and drop physical defense ordnance at unalterable hardware intervals.",
+      "register_state_outputs": {
+        "idle_hold": "11111111",
+        "execute_stage_one_drop": "01010101",
+        "execute_stage_two_purge": "00110011"
+      }
+    },
+    {
+      "mechanism_id": "HERO-DIOP-005",
+      "classical_name": "The Cog-Driven Odometric Register",
+      "treatise_source": "Dioptra, Section III",
+      "mechanical_logic": "A high-precision reduction gear train translates continuous wheel rotation into incremental lateral drops of pebbles into a collection basin, measuring spatial progression mechanically.",
+      "x00_system_mapping": "Hardwired spatial tracking matrix. A mechanical gear counter connected directly to the primary structural joints logs exact telemetry distances independently of electronic satellite navigation.",
+      "register_state_outputs": {
+        "zero_displacement": "00000000",
+        "unit_distance_increment": "00000001"
+      }
+    },
+    {
+      "mechanism_id": "HERO-MECH-029",
+      "classical_name": "The Interlocking Compound Worm Gear",
+      "treatise_source": "Mechanica, Book II",
+      "mechanical_logic": "An endless spiral screw directly meshes with a transverse spur gear teeth matrix, providing massive mechanical torque amplification while preventing load-induced backwards slippage.",
+      "x00_system_mapping": "Heavy limb actuator locking clamps. Ensures the primary load-bearing joints remain completely locked and rigid when power is cut, utilizing mechanical friction parameters to prevent structural collapse.",
+      "register_state_outputs": {
+        "freewheel_disengaged": "00000000",
+        "mechanical_torque_lock": "10000000"
+      }
+    },
+    {
+      "mechanism_id": "HERO-PNEU-001",
+      "classical_name": "The Hero Siphon Equilibrium Balance",
+      "treatise_source": "Pneumatica, Vol. I",
+      "mechanical_logic": "A closed fluid loop utilizing U-shaped pipes that automatically transfers liquid between compartments until hydrostatic pressure balances uniformly across all terminals.",
+      "x00_system_mapping": "Coolant distribution loop. Balances thermal spikes between the open-ended maxwell thrusters and the core power units using pure atmospheric pressure expansion vectors.",
+      "register_state_outputs": {
+        "equilibrium_balanced": "00000000",
+        "thermal_gradient_shift": "00001111"
+      }
+    }
+  ]
+}
