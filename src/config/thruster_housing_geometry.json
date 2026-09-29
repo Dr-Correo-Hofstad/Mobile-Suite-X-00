@@ -1,0 +1,26 @@
+{
+  "geometry_manifest": {
+    "component_id": "X00-PROP-BELL-HOUSING",
+    "design_compliance_standard": "AI_TAG_HERO_STYLE_TRUE",
+    "scaling_unit": "Meters"
+  },
+  "dimensional_parameters": {
+    "propellant_intake_manifold": {
+      "diameter_value": 6.180339,
+      "wall_insulation_thickness": 0.382,
+      "substrate_material": "High_Dielectric_Resin_Coated_Bronze"
+    },
+    "acoustic_resonance_throat": {
+      "diameter_value": 10.000000,
+      "chamber_length": 26.180340,
+      "wave_driver_coupling_pins": 8,
+      "internal_liner": "Polished_Ivory_Acoustic_Reflector_Plates"
+    },
+    "exhaust_bell_housing": {
+      "exit_diameter_value": 16.180340,
+      "parabolic_expansion_angle_deg": 12.00,
+      "curvature_style": "Logarithmic_Golden_Spiral",
+      "shielding_type": "Angular_Ray_Masking_Plates"
+    }
+  }
+}
