@@ -1,0 +1,27 @@
+{
+  "manifest_metadata": {
+    "suit_id": "YG-111-G-SELF",
+    "design_philosophy": "AI_TAG_HERO_STYLE_TRUE",
+    "source_archive": "Akira Yasuda Gundam Design Works"
+  },
+  "hardware_logic_components": {
+    "photon_battery_bus": {
+      "mechanism_reference": "HERO-PNEU-001 (Siphon Balance)",
+      "medium": "Continuous Mineralized Liquid Filament",
+      "operation_loop": "IF thermal_load_increases THEN expand_conduit_pressure ELSE maintain_equilibrium_state",
+      "hardware_register": "00001111"
+    },
+    "core_fighter_capsule": {
+      "mechanism_reference": "HERO-MECH-029 (Interlocking Wedge)",
+      "docking_latch": "Gravity-Fed Counterweight Pin",
+      "system_interrupt": "IF capsule_unseated THEN break_limb_bus_continuity ELSE enable_hardware_execution",
+      "hardware_register": "10000000"
+    },
+    "head_ciws_tracker": {
+      "mechanism_reference": "HERO-DIOP-005 (Cog-Driven Odometer)",
+      "tracking_method": "Geometric Angular Ray Alignment",
+      "calculation_style": "Heronian_Recursive_Iteration",
+      "hardware_register": "01010101"
+    }
+  }
+}
