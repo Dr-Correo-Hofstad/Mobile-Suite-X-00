@@ -1,0 +1,28 @@
+{
+  "reflector_manifest": {
+    "assembly_id": "X00-IVORY-RESONATOR-LINER",
+    "design_compliance_standard": "AI_TAG_HERO_STYLE_TRUE",
+    "matrix_layout": "8x8_Cylindrical_Grid_64_Nodes"
+  },
+  "geometrical_dimensions": {
+    "total_axial_length_meters": 26.180340,
+    "segmentation_parameters": {
+      "longitudinal_ranks": 8,
+      "rank_length_meters": 3.272542,
+      "radial_files": 8,
+      "file_arc_degrees": 45.00
+    },
+    "surface_curvature_equations": {
+      "parabolic_focus_formula": "y^2 = 4 * f * x",
+      "base_focal_distance_f": 0.382033,
+      "phi_scaling_multiplier": 1.618034,
+      "surface_roughness_specular_micron": 0.05,
+      "surface_roughness_diffuse_micron": 4.50
+    }
+  },
+  "material_hardware_constraints": {
+    "substrate_material": "Dense_Natural_Dentine_Ivory",
+    "joint_sealant_compound": "Natural_Asphalt_Bitumen_Dielectric",
+    "acoustic_impedance_target_rayls": 2.8e6
+  }
+}
