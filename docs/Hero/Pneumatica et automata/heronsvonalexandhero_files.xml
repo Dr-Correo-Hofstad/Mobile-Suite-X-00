@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file name="__ia_thumb.jpg" source="original">
+    <mtime>1656298016</mtime>
+    <size>31058</size>
+    <md5>def98d66a9deec2d283f8f0c7d57fa7e</md5>
+    <crc32>65cf77c9</crc32>
+    <sha1>b8894b32b5749569d60bf0b7e22c965a3f8b9ae9</sha1>
+    <format>Item Tile</format>
+    <rotation>0</rotation>
+  </file>
+  <file name="heronsvonalexandhero.epub" source="derivative">
+    <original>heronsvonalexandhero_hocr.html</original>
+    <mtime>1702485128</mtime>
+    <size>22364684</size>
+    <md5>ba36bfe65b84f192e972baf06a283f22</md5>
+    <crc32>6d6766cf</crc32>
+    <sha1>34bcab8deada5c576bf19fab0c2dcb66fc7a6a79</sha1>
+    <format>EPUB</format>
+  </file>
+  <file name="heronsvonalexandhero.gif" source="derivative">
+    <format>Animated GIF</format>
+    <original>heronsvonalexandhero_jp2.zip</original>
+    <mtime>1297453010</mtime>
+    <size>290763</size>
+    <md5>fb0e33c9517d73efbb6ebb17090bf57a</md5>
+    <crc32>9a2b14af</crc32>
+    <sha1>b645fbbc3315f5812ff6f7d911e916ebecc00b8a</sha1>
+  </file>
+  <file name="heronsvonalexandhero.pdf" source="derivative">
+    <format>Text PDF</format>
+    <original>heronsvonalexandhero_page_numbers.json</original>
+    <mtime>1724532221</mtime>
+    <size>28376383</size>
+    <md5>a38d6135d9084b89910b0176d52ba5cf</md5>
+    <crc32>0e2d8546</crc32>
+    <sha1>0e851e9377c77d64f2350dea90bcdec6e1e70b76</sha1>
+  </file>
+  <file name="heronsvonalexandhero_archive.torrent" source="metadata">
+    <btih>276d20554d725a3bd90b93d34bcd2790b3716adc</btih>
+    <mtime>1724532318</mtime>
+    <size>15794</size>
+    <md5>5a69bd2d442b74de65125ecaac880512</md5>
+    <crc32>6d41549f</crc32>
+    <sha1>496d8576db5cf7ac863f8d419f930e81d2ad3f5b</sha1>
+    <format>Archive BitTorrent</format>
+  </file>
+  <file name="heronsvonalexandhero_chocr.html.gz" source="derivative">
+    <ocr>tesseract 5.1.0-1-ge935</ocr>
+    <ocr_parameters>-l deu+grc</ocr_parameters>
+    <ocr_module_version>0.0.16</ocr_module_version>
+    <ocr_detected_script>Greek</ocr_detected_script>
+    <ocr_detected_script_conf>0.5864</ocr_detected_script_conf>
+    <ocr_detected_lang>el</ocr_detected_lang>
+    <ocr_detected_lang_conf>1.0000</ocr_detected_lang_conf>
+    <format>chOCR</format>
+    <original>heronsvonalexandhero_jp2.zip</original>
+    <mtime>1656365206</mtime>
+    <size>13164095</size>
+    <md5>b45c4a1456cbb742425ca5057a9e00c8</md5>
+    <crc32>042de3b8</crc32>
+    <sha1>d532f65394769908e1ecb2cc4220f7152efff891</sha1>
+  </file>
+  <file name="heronsvonalexandhero_cloth_detection.log" source="derivative">
+    <cloth_cover_detection_module_version>1.1</cloth_cover_detection_module_version>
+    <format>Cloth Cover Detection Log</format>
+    <original>heronsvonalexandhero_scandata.xml</original>
+    <mtime>1656365337</mtime>
+    <size>772</size>
+    <md5>ad5282bab8d04b2e155fa7d4185cf77d</md5>
+    <crc32>7e941161</crc32>
+    <sha1>5e3c860257604ed87ce9c9911b3fd25ad5c6d313</sha1>
+  </file>
+  <file name="heronsvonalexandhero_dc.xml" source="original">
+    <format>Dublin Core</format>
+    <mtime>1649036141</mtime>
+    <size>798</size>
+    <md5>c76366bd728a2a5c7f110d52f700c6c0</md5>
+    <crc32>e71a9163</crc32>
+    <sha1>e838c58c6391a7543e2833bfc1d1299bc670884b</sha1>
+  </file>
+  <file name="heronsvonalexandhero_djvu.txt" source="derivative">
+    <format>DjVuTXT</format>
+    <original>heronsvonalexandhero_djvu.xml</original>
+    <mtime>1656365577</mtime>
+    <size>1198076</size>
+    <md5>d5f29e581ff40ecf0a75580ae822495e</md5>
+    <crc32>a25c39c2</crc32>
+    <sha1>67cd44735c811caf47618b74130cc83c64788725</sha1>
+  </file>
+  <file name="heronsvonalexandhero_djvu.xml" source="derivative">
+    <format>Djvu XML</format>
+    <original>heronsvonalexandhero_hocr.html</original>
+    <mtime>1656365445</mtime>
+    <size>12446014</size>
+    <md5>a29c6e8b65d3568c5dfcd5101ec7228f</md5>
+    <crc32>ebc76a2b</crc32>
+    <sha1>ec2a8a0375dafcf4cdce9d6b8cb0d103f3a1d7b2</sha1>
+  </file>
+  <file name="heronsvonalexandhero_files.xml" source="original">
+    <format>Metadata</format>
+    <md5>faf1058faa3ee46c052d0816096d5cc7</md5>
+    <summation>md5</summation>
+  </file>
+  <file name="heronsvonalexandhero_hocr.html" source="derivative">
+    <hocr_char_to_word_module_version>1.1.0</hocr_char_to_word_module_version>
+    <hocr_char_to_word_hocr_version>1.1.15</hocr_char_to_word_hocr_version>
+    <ocr_parameters>-l deu+grc</ocr_parameters>
+    <ocr_module_version>0.0.16</ocr_module_version>
+    <ocr_detected_script>Greek</ocr_detected_script>
+    <ocr_detected_script_conf>0.5864</ocr_detected_script_conf>
+    <ocr_detected_lang>el</ocr_detected_lang>
+    <ocr_detected_lang_conf>1.0000</ocr_detected_lang_conf>
+    <format>hOCR</format>
+    <original>heronsvonalexandhero_chocr.html.gz</original>
+    <mtime>1656365405</mtime>
+    <size>23919912</size>
+    <md5>717fcac2c244cbf140c579460dfdc008</md5>
+    <crc32>250df0dc</crc32>
+    <sha1>a99a9cee84387eaa524d646c28701f91ea6f92d3</sha1>
+  </file>
+  <file name="heronsvonalexandhero_hocr_pageindex.json.gz" source="derivative">
+    <hocr_pageindex_module_version>1.0.0</hocr_pageindex_module_version>
+    <hocr_pageindex_hocr_version>1.1.15</hocr_pageindex_hocr_version>
+    <format>OCR Page Index</format>
+    <original>heronsvonalexandhero_hocr.html</original>
+    <mtime>1656365502</mtime>
+    <size>7183</size>
+    <md5>0e34b611f3959e045a207503b9ca515a</md5>
+    <crc32>54c48a3e</crc32>
+    <sha1>b3d7415a6ec43a2d15de3931e8b466e7d0b21bac</sha1>
+  </file>
+  <file name="heronsvonalexandhero_hocr_searchtext.txt.gz" source="derivative">
+    <hocr_fts_text_module_version>1.1.0</hocr_fts_text_module_version>
+    <hocr_fts_text_hocr_version>1.1.15</hocr_fts_text_hocr_version>
+    <word_conf_0_10>1468</word_conf_0_10>
+    <word_conf_11_20>971</word_conf_11_20>
+    <word_conf_21_30>1362</word_conf_21_30>
+    <word_conf_31_40>1911</word_conf_31_40>
+    <word_conf_41_50>2377</word_conf_41_50>
+    <word_conf_51_60>2800</word_conf_51_60>
+    <word_conf_61_70>3615</word_conf_61_70>
+    <word_conf_71_80>5530</word_conf_71_80>
+    <word_conf_81_90>15869</word_conf_81_90>
+    <word_conf_91_100>114975</word_conf_91_100>
+    <format>OCR Search Text</format>
+    <original>heronsvonalexandhero_hocr.html</original>
+    <mtime>1656365548</mtime>
+    <size>403995</size>
+    <md5>34868f5ae5caba3cea25bfa3a11eecef</md5>
+    <crc32>bc037055</crc32>
+    <sha1>ecb0abd2bdeeee7ba6bb0123af3ff3e00cecb56b</sha1>
+  </file>
+  <file name="heronsvonalexandhero_jp2.zip" source="derivative">
+    <format>Single Page Processed JP2 ZIP</format>
+    <original>heronsvonalexandhero_orig_jp2.tar</original>
+    <mtime>1297452904</mtime>
+    <size>183493241</size>
+    <md5>e04a81334ff4ae6c9985d5b777493afd</md5>
+    <crc32>3caaccd0</crc32>
+    <sha1>6c7e99b263bbf1939f11199fa5dea33c2823c0b2</sha1>
+    <filecount>600</filecount>
+  </file>
+  <file name="heronsvonalexandhero_marc.xml" source="original">
+    <format>MARC</format>
+    <mtime>1297365949</mtime>
+    <size>3837</size>
+    <md5>cbbb2bf92353d01314f3dc6d5e4c1d12</md5>
+    <crc32>5b30e9f4</crc32>
+    <sha1>fd13e2c8b947e6e5841a5f4a21d25ef482d22115</sha1>
+  </file>
+  <file name="heronsvonalexandhero_meta.mrc" source="original">
+    <format>MARC Binary</format>
+    <mtime>1297365949</mtime>
+    <size>1371</size>
+    <md5>d4507340d02e91f6d52947116960878f</md5>
+    <crc32>4b5f49a8</crc32>
+    <sha1>c5fc389d8ce621d8e760d821f4f7714e2da4b1ed</sha1>
+  </file>
+  <file name="heronsvonalexandhero_meta.sqlite" source="original">
+    <mtime>1464733178</mtime>
+    <size>6144</size>
+    <format>Metadata</format>
+    <md5>5ffe1cb0c95059a1c1c9a681a2e608cb</md5>
+    <crc32>2e4d6c3b</crc32>
+    <sha1>32fad9f3e1cd7bf9e7e38656238263d342ceec21</sha1>
+  </file>
+  <file name="heronsvonalexandhero_meta.xml" source="original">
+    <format>Metadata</format>
+    <mtime>1724532313</mtime>
+    <size>2913</size>
+    <md5>03b2acb63f65dc25760b0c30f06a85de</md5>
+    <crc32>7cddd405</crc32>
+    <sha1>f7aa8089e334e2a37892e47f5a7901a3f56a4ac3</sha1>
+  </file>
+  <file name="heronsvonalexandhero_metasource.xml" source="original">
+    <format>MARC Source</format>
+    <mtime>1297365949</mtime>
+    <size>440</size>
+    <md5>76e59149bdf7310a76f5f3055a3bb8cc</md5>
+    <crc32>c0ed0d4a</crc32>
+    <sha1>eb2e66ed9ceb1ab34e9599926b11c97010b2b530</sha1>
+  </file>
+  <file name="heronsvonalexandhero_orig_jp2.tar" source="original">
+    <format>Single Page Original JP2 Tar</format>
+    <mtime>1297432765</mtime>
+    <size>361349120</size>
+    <md5>c4488b6fdec117e5f9c760892f794b3c</md5>
+    <crc32>6a82ce41</crc32>
+    <sha1>f7d064694074b44c276c79b94dec92b5cdeca939</sha1>
+    <filecount>600</filecount>
+  </file>
+  <file name="heronsvonalexandhero_page_numbers.json" source="derivative">
+    <hocr_pagenumber_module_version>1.0.5</hocr_pagenumber_module_version>
+    <hocr_pagenumber_hocr_version>1.1.54</hocr_pagenumber_hocr_version>
+    <hocr_pagenumber_confidence>98</hocr_pagenumber_confidence>
+    <format>Page Numbers JSON</format>
+    <original>heronsvonalexandhero_hocr.html</original>
+    <mtime>1724532220</mtime>
+    <size>100362</size>
+    <md5>65bee1351aa3159478d79dfe2b98f7bc</md5>
+    <crc32>7795f6ce</crc32>
+    <sha1>bc54c9281e9f5d6f8bc3cea3e4769b747708beac</sha1>
+  </file>
+  <file name="heronsvonalexandhero_scandata.xml" source="original">
+    <format>Scandata</format>
+    <mtime>1656365336</mtime>
+    <size>309703</size>
+    <md5>3dcf00f03ce150b0ffa7fcd025f5854e</md5>
+    <crc32>eb0c715b</crc32>
+    <sha1>13795501d9102a6b89863d3466f8af5669604d23</sha1>
+  </file>
+</files>

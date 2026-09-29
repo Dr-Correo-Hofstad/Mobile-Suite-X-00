@@ -1,0 +1,7 @@
+27-Jun-22 21:28:54 INFO     Start cloth cover detector module version 1.1!
+27-Jun-22 21:28:54 INFO     sourceFile(scandata) : '/item/heronsvonalexandhero_scandata.xml' -> targetFile(log-file) '/item/heronsvonalexandhero_cloth_detection.log'
+27-Jun-22 21:28:54 INFO     The 'jp2' archive was found! Path to file: '/item/heronsvonalexandhero_jp2.zip'
+27-Jun-22 21:28:55 INFO     Analysis of cover page with leafNum 1: 'is cloth' - False, 'edge level' - 16.12870121161864
+27-Jun-22 21:28:56 INFO     Analysis of cover page with leafNum 596: 'is cloth' - False, 'edge level' - 13.794724111583948
+27-Jun-22 21:28:57 INFO     Save new scandata with tag 'clothCover' in /item/heronsvonalexandhero_scandata.xml
+27-Jun-22 21:28:57 INFO     Successful finish cloth-cover detector !

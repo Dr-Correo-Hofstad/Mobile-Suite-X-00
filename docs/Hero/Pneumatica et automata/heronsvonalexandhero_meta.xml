@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <title>Herons von Alexandria Druckwerke und Automatentheater = Pneumatica et automata</title>
+  <creator>Hero, of Alexandria</creator>
+  <creator>Schmidt, Wilhelm, 1862-1905</creator>
+  <subject>Pneumatica (Hero van Alexandrië)</subject>
+  <description>Supplementheft: Die Geschichte der Textüberlieferung, Griechisches Wort-Register</description>
+  <publisher>Lipsiae : Teubner</publisher>
+  <date>1899</date>
+  <language>grc</language>
+  <language>ger</language>
+  <language>grc</language>
+  <page-progression>lr</page-progression>
+  <sponsor>University of North Carolina at Chapel Hill</sponsor>
+  <contributor>University Library, University of North Carolina at Chapel Hill</contributor>
+  <scanningcenter>chapelhill</scanningcenter>
+  <mediatype>texts</mediatype>
+  <collection>prscr</collection>
+  <collection>unclibraries</collection>
+  <collection>americana</collection>
+  <shiptracking>prs01</shiptracking>
+  <call_number>b27800350</call_number>
+  <repub_state>4</repub_state>
+  <updatedate>2011-02-10 19:25:49</updatedate>
+  <updater>scanner-john-gill</updater>
+  <identifier>heronsvonalexandhero</identifier>
+  <uploader>scanner-john-gill@archive.org</uploader>
+  <addeddate>2011-02-10 19:25:51</addeddate>
+  <publicdate>2011-02-10 19:25:55</publicdate>
+  <scanner>scribe3.chapelhill.archive.org</scanner>
+  <ppi>400</ppi>
+  <camera>Canon 5D</camera>
+  <operator>scanner-john-gill@archive.org</operator>
+  <scandate>20110210200645</scandate>
+  <imagecount>598</imagecount>
+  <foldoutcount>0</foldoutcount>
+  <identifier-access>http://www.archive.org/details/heronsvonalexandhero</identifier-access>
+  <identifier-ark>ark:/13960/t4sj29j9j</identifier-ark>
+  <bookplateleaf>0004</bookplateleaf>
+  <curation>[curator]judec@archive.org[/curator][date]20110304212352[/date][state]approved[/state]</curation>
+  <scanfee>10</scanfee>
+  <sponsordate>20110228</sponsordate>
+  <lcnum>880 h562</lcnum>
+  <backup_location>ia903608_29</backup_location>
+  <openlibrary_edition>OL24603979M</openlibrary_edition>
+  <openlibrary_work>OL15672824W</openlibrary_work>
+  <unc_bib_record_id>b2780035</unc_bib_record_id>
+  <external-identifier>urn:oclc:record:1046037213</external-identifier>
+  <filesxml>Thu Dec 24 13:56:56 UTC 2020</filesxml>
+  <page_number_confidence>98</page_number_confidence>
+  <oclc-id>63953383</oclc-id>
+  <associated-names>Schmidt, Wilhelm, 1862-1905</associated-names>
+  <ocr>tesseract 5.1.0-1-ge935</ocr>
+  <ocr_parameters>-l deu+grc</ocr_parameters>
+  <ocr_module_version>0.0.16</ocr_module_version>
+  <ocr_detected_script>Greek</ocr_detected_script>
+  <ocr_detected_script_conf>0.5864</ocr_detected_script_conf>
+  <ocr_detected_lang>el</ocr_detected_lang>
+  <ocr_detected_lang_conf>1.0000</ocr_detected_lang_conf>
+  <pdf_module_version>0.0.18</pdf_module_version>
+  <page_number_module_version>1.0.5</page_number_module_version>
+</metadata>

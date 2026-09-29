@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metasource>
+<textid>heronsvonalexandhero</textid>
+<date>20110210192549</date>
+<userid>scanner-john-gill@archive.org</userid>
+<cclquery>@attr 6=1 @attr 5=100 @attr 4=1 @attr 3=1 @attr 2=3 @attr 1=12 b5224089 </cclquery>
+<zquery>local=b5224089</zquery>
+<target id="unc">University of North Carolina</target>
+<resultOffset>1</resultOffset>
+<service>yaz.us.archive.org/biblio.php</service>
+</metasource>
