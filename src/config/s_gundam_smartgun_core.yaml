@@ -1,0 +1,28 @@
+# ==============================================================================
+# HARDWARE CONFIGURATION PROFILE: BEAM SMARTGUN INTEGRATION (HERO SPEC)
+# ==============================================================================
+metadata:
+  subsystem_id: "MSA-0011-SMARTGUN-BUS"
+  compliance_tag: "AI_TAG_HERO_STYLE_TRUE"
+  source_document: "Gundam_Sentinel_Sheet_78"
+
+weapons_routing_mechanisms:
+  # The movable arm joint tracking follows Hero's Dioptra gear alignments
+  articulated_movable_frame:
+    geometry_type: "Continuous_Curvilinear_Linkage"
+    max_deflection_angle_deg: 45.0
+    tracking_loop_style: "Heronian_Recursive_Iteration"
+    coordinate_mapping: "Fixed_Mechanical_Grid_Matrix"
+  
+  # The energy supply operates as a pressurized hydraulic closed loop
+  energy_siphon_conduit:
+    medium: "High_Density_Mineral_Sap_Filament"
+    insulation_barrier: "Bitumen_Dielectric_Resin_Seal"
+    charge_accumulation_loop: "WHILE register_accumulator < max REPEAT siphon_pressure"
+
+system_runtime_registers:
+  # Hardware-level opcodes executing state changes for the weapon
+  bus_states:
+    weapon_secured_stowed: "00000000"
+    sensor_lock_tracking: "01010101"
+    discharge_valve_tripped: "11111111" # Full operational fire
