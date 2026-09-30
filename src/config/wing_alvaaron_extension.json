@@ -1,0 +1,28 @@
+{
+  "manifest_metadata": {
+    "extension_profile": "Wing_Zero_Alvaaron_Core_Alignment",
+    "compliance_standard": "AI_TAG_HERO_STYLE_TRUE",
+    "updated_registers": ["WING_BINDER_A", "WING_BINDER_B", "GN_DRIVE_T"]
+  },
+  "component_specifications": {
+    "wing_binder_array_A": {
+      "structural_type": "Primary_Acoustic_Waveguide_Housing",
+      "interlocking_plates": 2,
+      "mechanical_bus_state": "IF thrust_vector_vertical THEN lock_plates_parallel ELSE angle_step_45_deg"
+    },
+    "wing_binder_array_B": {
+      "structural_type": "Flexible_Cymatic_Diffuser",
+      "articulation_segments": 4,
+      "harmonic_damping_ratio": "Phi_Proportional_1.618034"
+    },
+    "gn_drive_tau_core": {
+      "propulsion_type": "Plasma_Vortex_Toroid_Accelerator",
+      "nominal_frequency_hz": 14.323911,
+      "ionization_field_state": {
+        "drive_idle": "00000000",
+        "vortex_rotation_active": "11111111",
+        "field_expansion_active": "10101010"
+      }
+    }
+  }
+}
