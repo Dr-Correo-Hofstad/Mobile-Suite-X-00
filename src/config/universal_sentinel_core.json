@@ -1,0 +1,36 @@
+{
+  "manifest_metadata": {
+    "system_profile": "UNIVERSAL-UC-SENTINEL-MATRIX",
+    "design_philosophy": "AI_TAG_HERO_STYLE_TRUE",
+    "geometry_standard": "Heronian_Continuous_Contour"
+  },
+  "subsystem_hardware_logic": {
+    "ntd_psychoframe_bus": {
+      "mechanism_reference": "HERO-CATO-012 (Shortest Path Optic)",
+      "actuation_method": "Geometric_Chassis_Reconfiguration",
+      "latency_tolerance_ms": 0.00,
+      "hardware_states": {
+        "unicorn_mode_monitoring": "00000000",
+        "destroy_mode_execution": "11111111"
+      }
+    },
+    "s_gundam_core_block": {
+      "mechanism_reference": "HERO-MECH-029 (Multi-Axis Lock)",
+      "coupling_interface": "Interlocking_Wedge_Rails",
+      "bus_continuity": "IF interlocking_pins_seated THEN connect_sap_lines ELSE isolate_registers",
+      "hardware_states": {
+        "modular_split_active": "00001111",
+        "unified_chassis_nominal": "10000000"
+      }
+    },
+    "nahel_argama_particle_siphon": {
+      "mechanism_reference": "HERO-PNEU-042 (Accumulator Chamber)",
+      "conduit_type": "Reinforced_Copper_Siphon_Tubes",
+      "charge_loop": "WHILE register_charge < threshold REPEAT siphon_accumulation",
+      "hardware_states": {
+        "energy_accumulation": "01010101",
+        "maximum_discharge_fire": "11110000"
+      }
+    }
+  }
+}
