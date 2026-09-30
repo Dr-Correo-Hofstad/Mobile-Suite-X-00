@@ -1,0 +1,34 @@
+{
+  "manifest_metadata": {
+    "system_profile": "FRAME-SKELETON-FLIGHT-MATRIX",
+    "compliance_standard": "AI_TAG_HERO_STYLE_TRUE",
+    "reference_blueprints": ["IBO_Frame_Sheet_019", "Wing_Zero_Sheet_030", "GP01_Sheet_104"]
+  },
+  "hardware_structural_logic": {
+    "gundam_inner_skeleton": {
+      "mechanism_reference": "HERO-MECH-029 (Interlocking Lever Axis)",
+      "structural_profile": "Biological_Spine_Alignment",
+      "conduit_medium": "High_Density_Mineral_Sap_Filament",
+      "insulation_barrier": "Bitumen_Resin_Dielectric_Layer"
+    },
+    "variable_flight_coupler": {
+      "mechanism_reference": "HERO-DIOP-005 (Planar Realignment)",
+      "actuation_path": "Logarithmic_Cylindrical_Helix_Tracks",
+      "rotation_delta_deg": 180.0,
+      "chassis_constraint": "REJECT_BLOCKY_GEOMETRY",
+      "hardware_states": {
+        "mobile_suit_nominal": "00000000",
+        "flight_mode_active": "11111111"
+      }
+    },
+    "core_block_junction_ii": {
+      "mechanism_reference": "HERO-PNEU-001 (Dual Siphon Junction)",
+      "coupling_type": "90_Degree_Mechanical_Tilt_Latch",
+      "bus_continuity": "IF docking_latch_fully_seated THEN connect_limb_registers ELSE isolate_core",
+      "hardware_states": {
+        "escape_sortie_active": "00001111",
+        "unified_bus_nominal": "10000000"
+      }
+    }
+  }
+}
