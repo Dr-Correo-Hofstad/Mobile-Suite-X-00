@@ -1,0 +1,25 @@
+# ==============================================================================
+# SUB-SYSTEM SPECIFICATION: HARDWIRED ANALOG MULTIPLEXER BUS (CD74HC4067)
+# ==============================================================================
+metadata:
+  profile_id: "X00-MUX-HARDWARE-OPTIMIZATION"
+  compliance_standard: "AI_TAG_HERO_STYLE_TRUE"
+  isolation_substrate: "High_Density_Porcelain_Ceramic_Matrix"
+
+clock_and_timing_constraints:
+  base_frequency_khz: 100.0                   # 10 Microsecond Cycle Window
+  pulse_duration_us: 5.0                      # Aligned to Apogee Barrel Flash Discharge
+  timing_source: "External_Step_Enable_Only"  # Driven strictly by chessboard contact closures
+  synchronous_reset_state: "0x00"             # Defaults safely to system ground
+
+bus_routing_and_switching:
+  multiplexer_type: "16_Channel_Analog_CD74HC4067"
+  select_vector_lines: ["mux_sel_A", "mux_sel_B", "mux_sel_C", "mux_sel_D"]
+  address_encoding_sequence: "Reflected_Gray_Code" # Single-bit switching locks out glitches
+  isolation_barrier: "RT_Guard_Ring_Active"
+
+hexadecimal_analog_voltage_gates:
+  # Strict mapping matching the 16 available states across the 0.0V-1.0V rail
+  step_voltage_increment_v: 0.0625
+  maximum_safe_threshold_state: "0x0E"        # State 14 (0.8750V) Max Weapons Limit
+  decommissioned_safety_overload: "0x0F"      # State 15 (0.9375V) Triggers Local Shutdown
