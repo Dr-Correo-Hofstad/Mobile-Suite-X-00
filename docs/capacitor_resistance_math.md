@@ -60,7 +60,61 @@ To organize this data into your code repository, your configuration matrix for e
 | Ankle Actuator B | *User Layout Input (m)* | *User Specs (Joules)* | $\propto 1/E_n$ | *Output Gauge* |
 | Hip Joint C | *User Layout Input (m)* | *User Specs (Joules)* | $\propto 1/E_n$ | *Output Gauge* |
 
-To calculate the exact numerical wire gauges and print out a functional Python script or configuration file for your repository, please provide:
+# Geometric Current-Dividing Network Architecture Documentation
+**System Module:** `docs/capacitor_resistance_math.md`  
+**Airframe Baseline:** XXXG-00W0 Wing Gundam Zero EW (16.7-Meter Bipedal Chassis)  
+**Compiler Target:** UNIVAC-IX Compliance  
 
--   The maximum capacity (in Farads or Joules) and voltage of the capacitors you are placing at the joints.
--   The approximate physical distance (lengths) between a primary joint piston and its corresponding defense power consumer.
+## 1. Core Engineering Directive
+To maximize structural reliability, mitigate the risk of high-shock resistor cracking, and minimize assembly weight, the airframe eliminates static hardware resistors entirely. The power routing system utilizes a **Zero-Resistor, Geometry-Based Current-Dividing Matrix**.
+
+By forcing the electrical conductance (\(G\)) of each routing path to scale in direct proportion to the maximum energy capacity (\(E_{\max}\)) of its destination component, current distributes automatically across the network via path availability alone.
+
+\[\frac{G_n}{G_{\text{total}}} = \frac{E_n}{E_{\text{total}}} \implies R_n = R_{\text{equivalent}} \times \left(\frac{E_{\text{total}}}{E_n}\right)\]
+
+Once the target branch resistance (\(R_n\)) is derived based on the component's energy profile, the required physical track cross-sectional area (\(A_n\)) is explicitly bound by its physical routing distance (\(L_n\)) through the frame:
+
+\[A_n = \frac{\rho \cdot L_n}{R_n}\]
+
+Where:
+*   \(\rho\) = Material resistivity of pure copper (\(1.68 \times 10^{-8} \ \Omega\cdot\text{m}\))
+*   \(L_n\) = Physical layout path length tracking along structural bone ribs (meters)
+
+---
+
+## 2. Global Constants & Energy Profiles
+The network balances against a total system baseline equivalent resistance (\(R_{\text{equivalent\_target}}\)) of **0.0005 Ohms**, anchoring the shared infrastructure.
+
+### Localized Energy Nodes
+*   **Knee Piston Array (\(E_{\text{knee}}\)):** \(80,000\text{ J}\) (0.25 F @ 800V DC soft-termination bank)
+*   **Ankle Actuator Array (\(E_{\text{ankle}}\)):** \(80,000\text{ J}\) (0.25 F @ 800V DC soft-termination bank)
+*   **Shoulder Cowl Array (\(E_{\text{shoulder}}\)):** \(120,000\text{ J}\) (Reinforced 0.375 F @ 800V DC bank)
+*   **Deflector Shield Sink (\(E_{\text{shield\_sink}}\)):** \(1,200,000\text{ J}\) (High-voltage Siemens MV inductive core)
+
+\[\mathbf{E_{\text{total}} = 1,480,000\text{ Joules}\ (1.48\text{ MJ})}\]
+
+---
+
+## 3. Structural Routing & Track Specifications
+
+The following sizing matrix details the exact geometry requirements for manufacturing the copper trace paths based on OpenSCAD chassis layouts.
+
+| Branch Node Identifier | Structural Run (\(L_n\)) | Target Resistance (\(R_n\)) | Required Copper Area (\(A_n\)) | Confirmed Manufacturing Spec |
+| :--- | :--- | :--- | :--- | :--- |
+| **Knee_Piston_Branch** | 1.45 meters | \(0.009250\ \Omega\) | \(2.6335\ \text{mm}^2\) | **13 AWG** Solid Core Track |
+| **Ankle_Actuator_Branch** | 0.95 meters | \(0.009250\ \Omega\) | \(1.7254\ \text{mm}^2\) | **15 AWG** Solid Core Track |
+| **Shoulder_Cowl_Branch** | 1.85 meters | \(0.006167\ \Omega\) | \(5.0400\ \text{mm}^2\) | **10 AWG** Heavy Gauge Rail |
+| **Deflector_Shield_Shunt** | 3.40 meters | \(0.000617\ \Omega\) | \(92.6270\ \text{mm}^2\) | **4/0 (0000) AWG** Busbar |
+
+---
+
+## 4. Crucial Manufacturing Guidelines for Assembly Engineers
+
+### 4.1 Length Correction Constraints
+Because resistance is a linear function of distance, physical track lengths must be managed strictly down to the millimeter. If a wire path is rerouted or lengthened during frame assembly, the cross-sectional area **must be re-calculated via `calculate_wire_gauges.py`** to scale up proportionally. Failure to modify thickness alongside length will throw off the current divider ratio, causing premature capacitor overcharging.
+
+### 4.2 Terminal Interface Calibration
+Connection joints (crimps, chassis lugs, and track termination boundaries) introduce parasitic terminal resistance (\(R_{\text{connect}}\)). The manufacturing team must verify that every terminal bond does not exceed **15 Micro-ohms (\(15\ \mu\Omega\))**. Any loose or oxidized interface will disrupt the passive current balance, shunting excess surge current down alternative paths.
+
+### 4.3 Thermal Runaway Mitigation
+Because pure copper exhibits a positive temperature coefficient (\(\alpha = 0.00393\)), any track that experiences localized heating will see an immediate spike in resistance, redirecting surge energy to neighboring cold lines. Ensure that the **Deflector Shield Shunt (4/0 Busbar)** is physically coupled to the structural frame using non-conductive, thermally optimized silicone pads to sink heat directly into the bipedal chassis bulk.
