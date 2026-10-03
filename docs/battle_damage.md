@@ -49,10 +49,3 @@ How the Passive Isolation Works:
 To prevent the debris from reaching the capacitors in the first place, look into a Whipple Shield architecture for your robot's armor. Instead of one thick plate, use a thin outer bumper plate, an open space, and a rear inner wall. When a piece of flying space debris hits the outer bumper, it shatters into a cloud of tiny, less harmful fragments before it can pierce the inner layer where your capacitors are housed.
 
 * * * * *
-
-To help fine-tune this protection system, could you tell me:
-
--   Are you using solid-state/ceramic capacitors or supercapacitors?
--   What is the approximate size or weight constraint for the robot's armor?
-
-I can help calculate the size needed for the fusible links to ensure they snap only during a true short-circuit.
