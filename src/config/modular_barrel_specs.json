@@ -1,0 +1,19 @@
+{
+  "manifest_metadata": {
+    "component_profile": "RT-X00-MODULAR-BARREL",
+    "architecture_style": "Self_Contained_Single_Cylinder",
+    "compliance_standard": "AI_TAG_HERO_STYLE_TRUE"
+  },
+  "barrel_containment_parameters": {
+    "housing_type": "Monolithic_Copper_Canister",
+    "fluid_seal_method": "Dielectric_Bitumen_Crimped_Cap",
+    "fluid_circulation_type": "None_Static_Internal_Electrolyte",
+    "transit_plumbing_required": false
+  },
+  "interface_routing_rules": {
+    "primary_lead_material": "Braided_Copper_Thread_Short_Path",
+    "switch_mechanism": "Ivory_Slider_Contact_Gate",
+    "target_driver": "Dual_Motion_Electromagnetic_Actuator",
+    "chessboard_trigger_addresses": ["G3", "G4", "G5", "G6", "H3", "H4", "H5", "H6"]
+  }
+}
