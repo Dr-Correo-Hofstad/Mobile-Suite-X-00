@@ -1,0 +1,93 @@
+// ============================================================================
+// PROJECT: XXXG-00W0 WING GUNDAM ZERO EW - AIRFRAME VISUAL OVERHAUL
+// COMPONENT VAULT: BANDAI CAST RUNNER F - CHEST ARMORED PLATES F1 & F2
+// DESIGN STYLE: NVIDIA FOUNDERS EDITION AGGRESSIVE PLANAR GEOMETRY MATRIX
+// PRODUCTION SPEC: NORTHROP GRUMMAN AC DELCO COMPRESSION LOCK PARITY
+// CONFIG METRIC: SCALED TITANIUM CASTS WITH MECHANICAL HOOKS (1:1 SCALE)
+// ============================================================================
+
+$fn = 100; // High-precision circular resolution segment count
+
+// Structural Constants Scaled 1:1 for a 16.7-Meter Airframe Scale (mm)
+panel_total_length = 1240;               // Total longitudinal vertical height (mm)
+panel_outer_width = 720;                 // Transverse forward chest shell envelope depth (mm)
+armor_skin_thickness = 50;              // Solid TiAl protective plating wall (mm)
+latch_pocket_depth = 40;                // AC Delco interlocking hook socket depth (mm)
+harness_conduit_width = 80;             // Cast-in 4oz copper logic trace track (mm)
+capacitor_pocket_depth = 15;            // Sub-armor recessed housing pocket depth (mm)
+capacitor_pocket_width = 140;           // Transverse MLCC array pocket width (mm)
+
+module Runner_F_Chest_Armor_Forge() {
+    // Central Supply Injection Runner Axis (Molten Feed Line from Siphon Forge)
+    color([0.25, 0.25, 0.28]) {
+        cylinder(h = panel_total_length * 1.5, d = 42, center = true);
+        // Direct injection gates tracking straight into the part mold cavities
+        translate() rotate() cylinder(h = 350, d = 22);
+        translate([0, -200, -300]) rotate() cylinder(h = 350, d = 22);
+    }
+    
+    // Instantiate Scaled NVIDIA-Faceted Part Molds Symmetrically (Left & Right)
+    Cast_Outer_Chest_Panels();
+}
+
+module Cast_Outer_Chest_Panels() {
+    // ---- PART F1: OUTER LEFT PROTECTIVE UPPER TORSO FRONT CHEST PANEL ----
+    translate([-550, 0, 400]) color([0.05, 0.35, 0.65]) { -- Pectoral Blue Armor Spec
+        difference() {
+            // Main weapon body extruded with complex faceted polygon profile
+            // Replicates the sharp planar clean-breaks of modern high-performance GPU shrouds
+            linear_extrude(height = panel_total_length * 0.45, center = true, scale = [0.85, 1.0])
+                polygon(points = [, 
+                    [panel_outer_width, 80], 
+                    [panel_outer_width - 60, 40],   // 45-Degree Diamond Cut Bevel Step
+                    [panel_outer_width, -80], 
+                    [0, -35]
+                ]);
+            
+            // Internal channel boring (Fits securely over the sub-frame chest links)
+            cylinder(h = panel_total_length * 0.5, d = panel_outer_width - 30, center = true);
+            
+            // AC DELCO INTERLOCKING HOOK HOUSING [Milled cutouts for the frame door hooks]
+            translate([panel_outer_width/2 - 20, 0, 0])
+                cube([latch_pocket_depth, 100, 300], center = true);
+            
+            // SUB-ARMOR CYLINDRICAL BARREL CAPACITOR BAYS [Segmented rows cut inside the armor inner wall]
+            for (z_offset = [-180, 0, 150]) {
+                translate([(panel_outer_width * 0.5 - armor_skin_thickness + capacitor_pocket_depth/2 - 30), 0, z_offset])
+                    cube([capacitor_pocket_depth, capacitor_pocket_width, 100], center = true);
+            }
+            
+            // Continuous cast-in routing track for the 4oz solid-state wiring rails
+            cube([harness_conduit_width, panel_outer_width, panel_total_length], center = true);
+            
+            // Slicing profile tool to generate an asymmetrical half-shell part component
+            translate([0, -panel_outer_width, 0])
+                cube([panel_outer_width * 2, panel_outer_width * 2, panel_total_length * 2], center = true);
+        }
+    }
+    
+    // ---- PART F2: OUTER RIGHT PROTECTIVE UPPER TORSO FRONT CHEST PANEL ----
+    translate([550, 0, -400]) rotate() color([0.05, 0.35, 0.65]) {
+        difference() {
+            linear_extrude(height = panel_total_length * 0.45, center = true, scale = [0.85, 1.0])
+                polygon(points = [, [panel_outer_width, 80], [panel_outer_width - 60, 40], [panel_outer_width, -80], [0, -35]]);
+            
+            cylinder(h = panel_total_length * 0.5, d = panel_outer_width - 30, center = true);
+            
+            translate([panel_outer_width/2 - 20, 0, 0])
+                cube([latch_pocket_depth, 100, 300], center = true);
+            
+            for (z_offset = [-180, 0, 150]) {
+                translate([(panel_outer_width * 0.5 - armor_skin_thickness + capacitor_pocket_depth/2 - 30), 0, z_offset])
+                    cube([capacitor_pocket_width, capacitor_pocket_depth, 100], center = true);
+            }
+            
+            cube([harness_conduit_width, panel_outer_width, panel_total_length], center = true);
+            translate([0, -panel_outer_width, 0])
+                cube([panel_outer_width * 2, panel_outer_width * 2, panel_total_length * 2], center = true);
+        }
+    }
+}
+
+// Render Master Assembly to Parameter Workspace
+Runner_F_Chest_Armor_Forge();
