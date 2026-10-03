@@ -1,0 +1,28 @@
+{
+  "manifest_metadata": {
+    "component_id": "RT-X00-CUSTOM-APOGEE-CAP",
+    "specification_profile": "AI_TAG_HERO_STYLE_TRUE",
+    "engineering_tier": "Custom_Production_Baseline"
+  },
+  "physical_hardware_schematic": {
+    "housing_material": "Refined_Copper_Cylinder",
+    "insulation_jacket": "Dielectric_Bitumen_Pour_Seal",
+    "control_switch_interface": "Ivory_Slider_Toggle_Gate",
+    "actuator_target_type": "Dual_Motion_Electromagnetic_Actuator",
+    "discharge_pulse_duration_us": 5.0,
+    "chessboard_address_range": ["G3", "G4", "G5", "G6", "H3", "H4", "H5", "H6"]
+  },
+  "electrochemical_fluid_formulation": {
+    "solution_ph_target": "8.2_Mildly_Alkaline",
+    "volumetric_composition_percentages": {
+      "distilled_h2o_carrier": 65.0,
+      "sodium_chloride_nacl": 20.0,
+      "native_natron_buffer": 10.0,
+      "copper_sulfate_cuso4": 5.0
+    },
+    "operational_functions": {
+      "conductivity_style": "High_Density_Ionic_Liquid_Filament",
+      "parasitic_mitigation": "Antimicrobial_Heavy_Metal_Catalysis"
+    }
+  }
+}
