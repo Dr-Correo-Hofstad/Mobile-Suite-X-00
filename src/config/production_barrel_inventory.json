@@ -1,0 +1,22 @@
+{
+  "inventory_metadata": {
+    "component_profile": "RT-X00-PRODUCTION-BARREL",
+    "logistics_class": "Class_1_Replacements_Stockpile",
+    "compliance_standard": "AI_TAG_HERO_STYLE_TRUE"
+  },
+  "manufacturing_parameters": {
+    "casing_material": "Industrial_Tempered_Copper_Pipe",
+    "sealing_agent": "High_Density_Bitumen_Resin_Cap",
+    "internal_electrolyte_fluid": "RT-Natron-Saline-V1",
+    "field_interchangeable": true
+  },
+  "chassis_junction_routing": {
+    "mounting_zone": "Lower_Leg_Calf_Recess_Alpha",
+    "physical_interface": "Movable_Slide_Carrier_Rails",
+    "primary_bus_leads": "Braided_Copper_Thread_Short_Path",
+    "chessboard_control_registers": {
+      "left_calf_array": ["G3", "G4"],
+      "right_calf_array": ["H3", "H4"]
+    }
+  }
+}
