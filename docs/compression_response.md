@@ -44,8 +44,3 @@ To ensure the wires and capacitors survive a heavy, non-penetrating slam, organi
 
 -   The Air Gap / Foam Dampener: Never mount capacitors directly against the inner face of the armor. Use a high-density, non-conductive silicone foam between the armor and the internal component tray to absorb the mechanical shock wave.
 -   The S-Curve Wire Technique: Do not run your precisely measured wires in straight lines. Route them with a slight "S-curve" or coil bend. If the robot's frame dents or flexes, the wire loop simply expands or contracts slightly without pulling on the terminals, keeping your calculated electrical resistances completely stable.
-
-To calculate the physical space and dampening you'll need under the armor, let me know:
-
--   What material is your robot's primary armor made of (e.g., aluminum, titanium, composite)?
--   Approximately how much physical space (clearance) do you have between the inner armor wall and the capacitor bank?
